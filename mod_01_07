@@ -19,6 +19,5 @@ for grade in grades:
 
     # увеличиваем индекс
     index += 1
-
 print(mean_score_dict)
 

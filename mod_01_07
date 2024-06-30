@@ -1,0 +1,24 @@
+
+grades = [[5, 3, 3, 5, 4], [2, 2, 2, 3], [4, 5, 5, 2], [4, 4, 3], [5, 5, 5, 4, 5]]
+students = {'Johnny', 'Bilbo', 'Steve', 'Khendrik', 'Aaron'}
+
+# Создадим пустой словарь для средних баллов
+mean_score_dict = {}
+
+# преобразуем множество students в сортированный список
+students_list = sorted(students)
+
+# запустим цикл для последовательного обхода всех элементов списка
+index = 0
+for grade in grades:
+    # считаем средний балл
+    mean_score = sum(grade)/len(grade)
+
+    # записываем в словарь пару - Студент: Средний_балл
+    mean_score_dict.update({students_list[index]: mean_score})
+
+    # увеличиваем индекс
+    index += 1
+
+print(mean_score_dict)
+

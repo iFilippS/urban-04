@@ -19,8 +19,8 @@
 #       вторым аргументом - 0
 #   Выведи результаты вызовов этих функций на экран(в консоль)
 
-from mod_04_01_fake_math import divide as fake_divide
-from mod_04_01_true_math import divide as true_divide
+from mod_04_02_fake_math import divide as fake_divide
+from mod_04_03_true_math import divide as true_divide
 
 result1 = fake_divide(69, 3)
 result2 = fake_divide(3, 0)
